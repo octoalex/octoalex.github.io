@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866666"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo-white.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="8.2265625"
+     inkscape:cx="56.098765"
+     inkscape:cy="63.939221"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.99215;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 13.945083,27.558166 c 0,0 2.656221,-5.312415 -2.656223,-10.624834 C 5.9741516,11.641239 5.3123576,8.964706 5.3123576,6.9725492 c 0,-3.320261 2.6562223,-5.97646982 5.9765024,-5.97646982 3.320278,0 5.976502,2.65620882 5.976502,5.97646982 0,1.9921568 -0.647242,4.6848608 -5.976502,9.9607828 -5.3176192,5.28222 -5.9765024,7.968627 -5.9765024,9.960783 0,3.32026 2.6562223,5.97647 5.9765024,5.97647 2.656223,0 3.984335,-1.328104 3.984335,-1.328104 L 21.913752,0.99607938 28.554308,31.542481"
+       id="path4465" />
+    <path
+       style="fill:none;stroke:#fefefe;stroke-width:1.99215;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 15.93725,19.589541 c 11.953005,0 11.953005,0 11.953005,0"
+       id="path4485" />
+  </g>
+</svg>
