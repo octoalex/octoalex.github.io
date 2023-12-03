@@ -19,14 +19,15 @@ header:not(.ignore), main:not(.ignore), footer:not(.ignore) {
   margin-left: 67px;
 }
 
-* > a {
+a {
   color: white;
   text-decoration: none;
 }
 
-* > a.gradient {
+a.gradient {
   background: linear-gradient(to right, var(--color-0) 3ch, var(--color-1) 0 4ch, var(--color-2) 0);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
