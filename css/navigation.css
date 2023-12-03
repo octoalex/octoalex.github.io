@@ -15,12 +15,16 @@ body {
   background: #1F1F1F;
 }
 
+header, main, footer {
+  margin-left: 67px;
+}
+
 * > a {
   color: white;
 }
 
 nav {
-  position: relative;
+  position: fixed;
   width: 67px;
   background: linear-gradient(to bottom, var(--color-0) 20%, var(--color-1) 0 22%, var(--color-2) 0);
   height: 100vh;
