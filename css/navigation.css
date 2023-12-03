@@ -34,6 +34,12 @@ nav > div {
   transition: margin-right 200ms ease-in-out;
 }
 
+nav > div > img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
 nav > div:hover {
   margin-right: 3px;
 }
@@ -44,6 +50,7 @@ nav > div:hover {
   height: 36px;
   background: linear-gradient(to left, var(--color-0) 20px, var(--color-1) 0 24px, var(--color-2) 0);
   padding: 3px 4px 3px 0;
+  margin-top: 16px;
   transform-origin: right;
   transform: translateX(-160px) skewX(-15deg);
   transition: background-position 200ms ease-in-out 250ms,
@@ -86,11 +93,11 @@ nav > div:hover {
 
 .button:hover {
   background-position: 10px 0;
-  transform: translateX(-102px) skewX(-15deg);
+  transform: translateX(-72px) skewX(-15deg);
 }
 
 .button:hover > .button-bg {
-  width: 96px;
+  width: 84px;
 }
 
 .button:hover > .content > img {
