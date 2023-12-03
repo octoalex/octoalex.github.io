@@ -15,18 +15,25 @@ body {
   background: #1F1F1F;
 }
 
-header, main, footer {
+header:not(.ignore), main:not(.ignore), footer:not(.ignore) {
   margin-left: 67px;
 }
 
 * > a {
   color: white;
+  text-decoration: none;
+}
+
+* > a.gradient {
+  background: linear-gradient(to right, var(--color-0) 3ch, var(--color-1) 0 4ch, var(--color-2) 0);
+  background-clip: text;
+  color: transparent;
 }
 
 nav {
   position: fixed;
   width: 67px;
-  background: linear-gradient(to bottom, var(--color-0) 20%, var(--color-1) 0 22%, var(--color-2) 0);
+  background: linear-gradient(to bottom, var(--color-0) 288px, var(--color-1) 0 317px, var(--color-2) 0);
   height: 100vh;
 }
 
