@@ -5,19 +5,51 @@ header {
   margin-bottom: 128px;
 }
 
+h1 {
+  font-size: 192px;
+  margin: 0;
+}
+
 h2 {
   font-size: 32px;
   left: 16px;
-  width: max-content;
+  margin: 0;
 }
 
-h1 {
-  text-align: right;
-  font-size: 192px;
-  width: max-content;
+h3 {
+  margin: 0;
+  font-size: 20px;
 }
 
-header > section {
+a.gradient {
+  position: relative;
+  padding: 0 64px 0 0;
+  box-sizing: border-box;
+  transition: background-position 200ms ease-in-out;
+}
+
+a.gradient > span {
+  position: absolute;
+  /*background: transparent;*/
+  border: 4px solid transparent;
+  height: 100%;
+  top: -2px;
+  left: -7px;
+  border-radius: 8px;
+  z-index: -1;
+  transition: border-color 200ms ease-in-out;
+}
+
+a.gradient:hover {
+  background-position: -1ch 0;
+}
+
+a.gradient:hover > span {
+  /*background: white;*/
+  border-color: white;
+}
+
+section.title-card {
   position: relative;
   width: max-content;
   display: flex;
@@ -26,67 +58,69 @@ header > section {
   margin-top: 256px;
 }
 
-header > section > img {
+section.title-card > img {
   width: 1232px;
   height: 288px;
   transform: translateY(32px);
 }
 
-header > section > h1 {
+section.title-card > h1 {
   position: absolute;
   color: transparent;
-  margin: 0 !important;
   transform: translateY(32px);
   width: 1232px;
   height: 288px;
   font-size: 262px;
 }
 
-header > section > h2 {
+section.title-card > h2 {
   position: absolute;
   line-height: 1em;
   margin: 0 0 0 32px;
 }
 
-header > section > h2:first-of-type {
+section.title-card > h2.intro {
   top: -8px;
 }
 
-header > section > h2:last-of-type {
+section.title-card > h2.outro {
   transform: translateY(320px);
   width: 100%;
   margin: 0 !important;
   text-align: right;
 }
 
-header > section > h2  > a {
-  position: relative;
-  padding: 0 64px 0 0;
-  box-sizing: border-box;
-  transition: background-position 200ms ease-in-out;
-}
-
-header > section > h2 > a > span {
-  position: absolute;
-  /*background: transparent;*/
-  border: 4px solid transparent;
+section.title-card > h2 > a.gradient > span {
   width: 9ch;
-  height: 100%;
-  top: -2px;
-  left: -7px;
-  border-radius: 8px;
-  z-index: -1;
-  transition: border-top-color 200ms ease-in-out,
-              border-right-color 200ms ease-in-out,
-              border-bottom-color 200ms ease-in-out,
-              border-left-color 200ms ease-in-out;
 }
 
-header > section > h2 > a:hover {
-  background-position: -1ch 0;
+section.hint {
+  position: absolute;
+  left: 96px;
+  top: 56px;
 }
 
-header > section > h2 > a:hover > span {
-  /*background: white;*/
-  border-color: white;
+section.hint > h3 {
+  height: 48px;
+}
+
+section.hint > div {
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.progress > h2 {
+  text-align: center;
+  padding: 64px 0 16px 0;
+}
+
+section.progress > h3 {
+  text-align: center;
+  padding: 0 0 0 64px;
+}
+
+section.progress > h3 > a > span {
+  width: 9ch;
 }

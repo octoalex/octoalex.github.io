@@ -19,7 +19,17 @@ header:not(.ignore), main:not(.ignore), footer:not(.ignore) {
   margin-left: 67px;
 }
 
-a {
+img:not(.ignore, .icon-48), img.icon-24 {
+  width: 24px;
+  height: 24px;
+}
+
+img.icon-48 {
+  width: 48px;
+  height: 48px;
+}
+
+a:not(.ignore) {
   color: white;
   text-decoration: none;
 }
@@ -31,8 +41,26 @@ a.gradient {
   color: transparent;
 }
 
+a.sleeper {
+  position: relative;
+}
+
+a.sleeper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, var(--color-0) 3ch, var(--color-1) 0 4ch, var(--color-2) 0);
+}
+
 nav {
   position: fixed;
+  /* to ensure rendering on left of screen, with no gaps */
+  top: 0;
+  left: 0;
+
   width: 67px;
   background: linear-gradient(to bottom, var(--color-0) 288px, var(--color-1) 0 317px, var(--color-2) 0);
   height: 100vh;
@@ -91,8 +119,6 @@ nav > div:hover {
 }
 
 .button > .content > img {
-  width: 24px;
-  height: 24px;
   transition: transform 350ms ease-in-out;
 }
 
@@ -120,7 +146,75 @@ nav > div:hover {
   transform: translateX(-24px);
 }
 
+section.about {
+  position: fixed;
+  left: 128px;
+  bottom: -256px;
+  width: 384px;
+  height: 256px;
+  background: linear-gradient(to right, var(--color-0) 64px, var(--color-1) 0 68px, var(--color-2) 0);
+  background-clip: content-box;
+  padding: 0 64px 64px 0;
+
+  transition: bottom 500ms ease-in-out,
+              background-position 300ms ease-in-out 10ms;
+}
+
+section.about > div.about-bg {
+  margin: 3px;
+  background: #3F3F3F;
+  width: 378px;
+  height: 250px;
+
+  transition: margin 300ms ease-in-out 100ms,
+              height 500ms ease-in-out,
+              width 500ms ease-in-out;
+}
+
+section.about > div.content {
+  position: absolute;
+  top: 0;
+  width: 384px;
+}
+
+section.about > div.content > div {
+  height: 68px;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+section.about > div.content > div > img {
+  margin: 0 8px;
+}
+
+section.about > div.content > p {
+  font-size: 16px;
+  margin: 6px;
+}
+
+section.about:hover {
+  bottom: -32px;
+  background-position: -48px;
+}
+
+section.about:hover > div.about-bg {
+  margin: 68px 4px 4px 4px;
+  height: 184px;
+  width: 376px;
+}
+
 .screen-edge {
   position: absolute;
   transform: rotate(-90deg) translateX(-48px) translateY(-48px);
+}
+
+span.pointer {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
 }

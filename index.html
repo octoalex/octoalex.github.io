@@ -28,15 +28,62 @@
 
   <p class="screen-edge">screen edge</p>
 
+  <header>
+    <section class="title-card">
+<!--      first the image -->
+      <img src="img/octopost-white.svg" alt="" class="ignore">
+<!--      then the main text, invisible so it gives you the illusion of selection -->
+      <h1>octopost</h1>
+<!--      on top of all, the lesser headings, rendered on top, so you can select them -->
+      <h2 class="intro">welcome to the</h2>
+      <h2 class="outro">by <a href="https://github.com/octoalex" class="gradient">
+<!--        the span is the border, essentially -->
+<!--        maybe I could remove it, but I'm too tired now -->
+        <span></span>
+        @OctoAlex
+      </a></h2>
+    </section>
+
+    <section class="hint">
+      <h3>Click one <br> of these!</h3>
+      <div>
+        <span class="pointer"></span>
+      </div>
+      <div>
+        <span class="pointer"></span>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="progress">
+      <h2>
+        It's still a work in progress!
+      </h2>
+      <h3>
+        If you find an issue, please
+        <a href="https://github.com/octoalex/octoalex.github.io/issues/new" class="gradient">
+          <span></span>
+          report it
+        </a>
+      </h3>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+<!--  navbar at end of file to ensure it renders over all other elements -->
   <nav>
     <div>
-      <img src="img/logo-white.svg" alt="">
+      <img src="img/logo-white.svg" alt="" class="ignore">
       <a href="https://octoalex.github.io/">
         <div class="button">
           <div class="button-bg"></div>
           <div class="content">
             <p>Index</p>
-            <img src="img/material/home.svg" alt="">
+            <img src="img/material/home-24.svg" alt="">
           </div>
         </div>
       </a>
@@ -45,31 +92,30 @@
           <div class="button-bg"></div>
           <div class="content">
             <p>Credits</p>
-            <img src="img/material/signature.svg" alt=""></div>
+            <img src="img/material/signature-24.svg" alt="">
+          </div>
         </div>
       </a>
     </div>
-  </nav>
 
-  <header>
-    <section>
-      <img src="img/octopost-white.svg" alt="">
-      <h1>octopost</h1>
-      <h2>welcome to the</h2>
-      <h2>by <a href="https://github.com/octoalex" class="gradient">
-        <span></span>
-        @OctoAlex
-      </a></h2>
+    <section class="about">
+      <div class="about-bg"></div>
+      <div class="content">
+        <div>
+          About
+          <img src="img/material/info-48.svg" alt="" class="icon-48">
+        </div>
+        <p>
+          Copyright &copy; 2023 OctoAlex. Available under the <a href="https://opensource.org/license/mit/" class="sleeper">MIT License</a>
+          <br><br>
+          I will add my contact info here later, have a good day <br> <br>
+          For any legal issue, please
+          <a href="https://github.com/octoalex/octoalex.github.io/issues/new" class="sleeper"> Open an issue</a>
+          on the website's GitHub repository
+        </p>
+      </div>
     </section>
-  </header>
-
-  <main>
-
-  </main>
-
-  <footer>
-
-  </footer>
+  </nav>
 
 </body>
 
