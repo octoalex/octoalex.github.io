@@ -43,6 +43,7 @@ a.gradient {
 
 a.sleeper {
   position: relative;
+  line-height: 1.3em;
 }
 
 a.sleeper::after {
