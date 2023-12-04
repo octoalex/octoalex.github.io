@@ -54,6 +54,15 @@ a.sleeper::after {
   height: 2px;
   width: 100%;
   background: linear-gradient(to right, var(--color-0) 3ch, var(--color-1) 0 4ch, var(--color-2) 0);
+  /*transition: height 250ms ease-in-out,*/
+  /*            bottom 250ms ease-in-out;*/
+}
+
+a.sleeper:hover::after {
+  content: "";
+
+  height: 4px;
+  bottom: -1px;
 }
 
 nav {
