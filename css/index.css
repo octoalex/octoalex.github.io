@@ -22,31 +22,13 @@ h3 {
 }
 
 a.gradient {
-  position: relative;
   padding: 0 64px 0 0;
   box-sizing: border-box;
   transition: background-position 200ms ease-in-out;
 }
 
-a.gradient > span {
-  position: absolute;
-  /*background: transparent;*/
-  border: 4px solid transparent;
-  height: 100%;
-  top: -2px;
-  left: -7px;
-  border-radius: 8px;
-  z-index: -1;
-  transition: border-color 200ms ease-in-out;
-}
-
 a.gradient:hover {
   background-position: -1ch 0;
-}
-
-a.gradient:hover > span {
-  /*background: white;*/
-  border-color: white;
 }
 
 section.title-card {
@@ -92,6 +74,8 @@ section.title-card > h2.outro {
 
 section.title-card > h2 > a.gradient > span {
   width: 9ch;
+  top: -3px;
+  left: -7px;
 }
 
 section.hint {
@@ -123,4 +107,6 @@ section.progress > h3 {
 
 section.progress > h3 > a > span {
   width: 9ch;
+  top: -4px;
+  left: -6px;
 }

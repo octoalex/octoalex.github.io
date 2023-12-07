@@ -39,6 +39,22 @@ a.gradient {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  position: relative;
+}
+
+a.gradient > span {
+  position: absolute;
+  /*background: transparent;*/
+  border: 4px solid transparent;
+  height: 100%;
+  border-radius: 8px;
+  z-index: -1;
+  transition: border-color 200ms ease-in-out;
+}
+
+a.gradient:hover > span {
+  /*background: white;*/
+  border-color: white;
 }
 
 a.sleeper {
