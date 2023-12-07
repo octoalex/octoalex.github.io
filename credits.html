@@ -24,8 +24,8 @@
   <meta name="theme-color" content="#fafafa">
 
   <script defer>
-    function highlight(what) {
-      if (!window.location.href.includes("#" + what)) {
+    function highlight(what, on_load) {
+      if (!window.location.href.includes("#" + what) && on_load) {
         return
       }
 
@@ -44,7 +44,7 @@
   </script>
 </head>
 
-<body onload="highlight('willing_statement')">
+<body onload="highlight('willing_statement', true)">
 
   <p class="screen-edge">screen edge</p>
 
@@ -53,7 +53,7 @@
       <h1>Authors &amp; Credits</h1>
       <p>
         The collection of people who, willingly or
-        <a href="#willing_statement" class="sleeper" onclick="highlight('willing_statement')">not</a>, <br>
+        <a href="#willing_statement" class="sleeper" onclick="highlight('willing_statement', false)">not</a>, <br>
         contributed to the creation of this website
       </p>
     </hgroup>
