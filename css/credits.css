@@ -1,0 +1,115 @@
+h1 {
+  font-size: 96px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 64px;
+  text-align: center;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a.gradient {
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  transition: background-position 200ms ease-in-out;
+}
+
+a.gradient:hover {
+  background-position: -1ch 0;
+}
+
+hgroup > p, section > p {
+  font-size: 32px;
+  text-align: center;
+  margin: 16px;
+}
+
+hgroup {
+  margin: 96px 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hgroup > p > a.sleeper::after {
+  background-image: linear-gradient(to right, var(--color-0) 1ch, var(--color-1) 0 2ch, var(--color-2) 0);
+}
+
+section.authors > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+section.authors > div > p {
+  width: 50%;
+}
+
+section.authors > div > p:first-child {
+  text-align: right;
+}
+
+section.authors > div > p:last-child {
+  margin: 0 16px;
+}
+
+section.authors > div > p > a.gradient {
+
+}
+
+section.authors > div > p > a.gradient > span {
+  top: -4px;
+  left: -4px;
+}
+
+div#octoalex > p > a.gradient > span {
+  width: 9ch;
+}
+
+div#google > p > a.gradient > span {
+  width: 7ch;
+}
+
+div#google > p > a.sleeper::after {
+  background-image: linear-gradient(to right, var(--color-0) 5ch, var(--color-1) 0 6ch, var(--color-2) 0);
+}
+
+div#h5bp > p > a.gradient > span {
+  width: 5ch;
+}
+
+div#h5bp > p > a.sleeper::after {
+  background-image: linear-gradient(to right, var(--color-0) 8ch, var(--color-1) 0 9ch, var(--color-2) 0);
+}
+
+div#jetbrains > p > a.gradient > span {
+  width: 10ch;
+}
+
+div#jetbrains > p > a.sleeper::after {
+  background: linear-gradient(to right, var(--color-0) 3ch, var(--color-1) 0 4ch, var(--color-2) 0);
+}
+
+#willing_statement > h2 {
+  border-radius: 16px;
+  padding: 16px;
+  width: 11ch;
+}
+
+.highlight > h2 {
+  background: #FFFFFF7F;
+}
+
+.force-da-transition > h2 {
+  transition: background-color 1s ease-in-out;
+}

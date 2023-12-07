@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>credits - octopost</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/credits.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <script defer>
+    function highlight(what) {
+      if (!window.location.href.includes("#" + what)) {
+        return
+      }
+
+      let elem = document.getElementById(what)
+      elem.classList.add("highlight")
+      setTimeout(() => {
+        elem.classList.remove("highlight")
+        setTimeout(() => {
+          elem.classList.remove("force-da-transition")
+        }, 1100)
+      }, 100)
+      setTimeout(() => {
+        elem.classList.add("force-da-transition")
+      }, 50)
+    }
+  </script>
+</head>
+
+<body onload="highlight('willing_statement')">
+
+  <p class="screen-edge">screen edge</p>
+
+  <header>
+    <hgroup>
+      <h1>Authors &amp; Credits</h1>
+      <p>
+        The collection of people who, willingly or
+        <a href="#willing_statement" class="sleeper" onclick="highlight('willing_statement')">not</a>, <br>
+        contributed to the creation of this website
+      </p>
+    </hgroup>
+  </header>
+
+  <main>
+    <section class="authors">
+
+      <h2>
+        Authors
+      </h2>
+      <p>
+        Those who directly contributed to the website
+      </p>
+
+      <div id="octoalex">
+        <p>
+          <a href="https://github.com/octoalex" class="gradient">
+            <span></span>
+            @OctoAlex
+          </a>
+        </p>
+        <span>:</span>
+        <p>
+          Owner, Coder, Stylist
+        </p>
+      </div>
+
+    </section>
+
+    <section class="authors" id="willing_statement">
+      <h2>
+        Third Party
+      </h2>
+      <p>
+        Those who created software that was licensed for the use of this website
+      </p>
+
+      <div id="google">
+        <p>
+          <a href="https://github.com/google/" class="gradient">
+            <span></span>
+            @Google
+          </a>
+        </p>
+        <span>:</span>
+        <p>
+          <a href="https://github.com/google/material-design-icons" class="sleeper">Material Design Icons</a>
+        </p>
+      </div>
+
+      <div id="h5bp">
+        <p>
+          <a href="https://github.com/h5bp/" class="gradient">
+            <span></span>
+            @h5bp
+          </a>
+        </p>
+        <span>:</span>
+        <p>
+          <a href="https://github.com/h5bp/html5-boilerplate" class="sleeper">HTML5 Boilerplate (Website Template)</a>
+        </p>
+      </div>
+
+      <div id="jetbrains">
+        <p>
+          <a href="https://github.com/JetBrains/" class="gradient">
+            <span></span>
+            @JetBrains
+          </a>
+        </p>
+        <span>:</span>
+        <p>
+          <a href="https://github.com/JetBrains/JetBrainsMono" class="sleeper">JetBrains Mono Font</a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+<!--  navbar at end of file to ensure it renders over all other elements -->
+  <nav>
+    <div>
+      <img src="img/logo-white.svg" alt="" class="ignore">
+      <a href="https://octoalex.github.io/">
+        <div class="button">
+          <div class="button-bg"></div>
+          <div class="content">
+            <p>Index</p>
+            <img src="img/material/home-24.svg" alt="">
+          </div>
+        </div>
+      </a>
+      <a href="https://octoalex.github.io/credits/">
+        <div class="button">
+          <div class="button-bg"></div>
+          <div class="content">
+            <p>Credits</p>
+            <img src="img/material/signature-24.svg" alt="">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <section class="about">
+      <div class="about-bg"></div>
+      <div class="content">
+        <div>
+          About
+          <img src="img/material/info-48.svg" alt="" class="icon-48">
+        </div>
+        <p>
+          Copyright &copy; 2023 OctoAlex. Available under the <a href="https://github.com/octoalex/octoalex.github.io/blob/main/LICENSE" class="sleeper">MIT License</a>
+          <br><br>
+          I will add my contact info here later, have a good day <br> <br>
+          For any legal issue, please <br>
+          <a href="https://github.com/octoalex/octoalex.github.io/issues/new" class="sleeper"> Open an issue</a>
+          on the website's GitHub repository
+        </p>
+      </div>
+    </section>
+  </nav>
+
+</body>
+
+</html>
