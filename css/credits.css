@@ -100,6 +100,14 @@ div#jetbrains > p > a.sleeper::after {
   background: linear-gradient(to right, var(--color-0) 3ch, var(--color-1) 0 4ch, var(--color-2) 0);
 }
 
+div#necolas > p > a.gradient > span {
+  width: 8ch;
+}
+
+div#necolas > p > a.sleeper::after {
+  background: linear-gradient(to right, var(--color-0) 6ch, var(--color-1) 0 7ch, var(--color-2) 0);
+}
+
 #willing_statement > h2 {
   border-radius: 16px;
   padding: 16px;
