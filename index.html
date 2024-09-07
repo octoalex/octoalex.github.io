@@ -28,14 +28,14 @@
 
   <p class="screen-edge">screen edge</p>
 
-  <header>
+  <header id="header" class="ignore">
     <section class="title-card">
 <!--      first the image -->
       <img src="img/octopost-white.svg" alt="" class="ignore">
+      <!--      on top of all, the lesser headings, rendered on top, so you can select them -->
+      <h2 class="intro">welcome to the</h2>
 <!--      then the main text, invisible so it gives you the illusion of selection -->
       <h1>octopost</h1>
-<!--      on top of all, the lesser headings, rendered on top, so you can select them -->
-      <h2 class="intro">welcome to the</h2>
       <h2 class="outro">by <a href="https://github.com/octoalex" class="gradient">
 <!--        the span is the border, essentially -->
 <!--        maybe I could remove it, but I'm too tired now -->
@@ -53,9 +53,7 @@
         <span class="pointer"></span>
       </div>
     </section>
-  </header>
-
-  <main>
+    <span class="spacing"></span>
     <section class="progress">
       <h2>
         It's still a work in progress!
@@ -68,6 +66,10 @@
         </a>
       </h3>
     </section>
+  </header>
+
+  <main>
+<!--    add content -->
   </main>
 
   <footer>
